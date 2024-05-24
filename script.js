@@ -1,4 +1,4 @@
-let products = [
+const products = [
     {
         id: 1,
         title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -10,7 +10,7 @@ let products = [
             rate: 3.9,
             count: 120
         }
-    },----------------
+    },
     {
         id: 2,
         title: "Mens Casual Premium Slim Fit T-Shirts ",
@@ -147,7 +147,7 @@ let products = [
         id: 13,
         title: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
         price: 599,
-        description: "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+        description: "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel. 75Hz using HDMI port Brightness is 250 nit. Color Supported - 16. 7 million colors. Horizontal Viewing Angle-178 degree. Vertical Viewing Angle-178 degree 75 hertz",
         category: "electronics",
         image: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
         rating: {
@@ -159,7 +159,7 @@ let products = [
         id: 14,
         title: "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
         price: 999.99,
-        description: "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+        description: "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast AMD Radeo Free Sync 2 technology to reduce the tearing and stuttering that occur between a graphic card’s frame rate and a monitor’s refresh rate. The fast 144Hz refresh rate provides flawless smooth gameplay with less motion blur, screen tearing and ghosting. ",
         category: "electronics",
         image: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
         rating: {
@@ -171,7 +171,7 @@ let products = [
         id: 15,
         title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
         price: 56.99,
-        description: "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+        description: "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm. Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest, 1 Hidden Pocket Inside. Adjustable Cuffs: Help to keep wind out. Adjustable and Detachable Hood: Removable Hood.",
         category: "women's clothing",
         image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
         rating: {
@@ -183,7 +183,7 @@ let products = [
         id: 16,
         title: "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
         price: 29.95,
-        description: "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+        description: "100% POLYURETHANE (shell) 100% POLYESTER (Lining) 75% POLYESTER 25% COTTON (Sweater) Faux leather material for style and comfort / 2 pockets of front / Detail stitching at sides / Detail stitching at back / Button detail on waist / Detail stitching at sleeves / Detail stitching at hem / 100% polyester lining / 75% polyester 25% cotton / Machine wash cold / Do not bleach / Dry flat / Iron low.",
         category: "women's clothing",
         image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
         rating: {
@@ -195,7 +195,7 @@ let products = [
         id: 17,
         title: "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
         price: 39.99,
-        description: "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+        description: "Lightweight perfect for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and Water Resistant. Quick-drying and Lightweight Casual Fit, Fashionable and comfortable to wear, Suitable for all seasons.",
         category: "women's clothing",
         image: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
         rating: {
@@ -207,7 +207,7 @@ let products = [
         id: 18,
         title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
         price: 9.85,
-        description: "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+        description: "95% RAYON 5% SPANDEX Casual, Elegant, Comfortable Soft and Lightweight 95% Rayon 5% Spandex Light weight, soft and stretchy. Short sleeve and boat neck style",
         category: "women's clothing",
         image: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
         rating: {
@@ -219,7 +219,7 @@ let products = [
         id: 19,
         title: "Opna Women's Short Sleeve Moisture",
         price: 7.95,
-        description: "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+        description: "100% Polyester, Machine wash, 100% cationic polyester interlock, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
         category: "women's clothing",
         image: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
         rating: {
@@ -231,7 +231,7 @@ let products = [
         id: 20,
         title: "DANVOUY Womens T Shirt Casual Cotton Short",
         price: 12.99,
-        description: "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+        description: "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees The fabric is soft and has some stretch. Casual and stylish , it is easy to match your outfit.",
         category: "women's clothing",
         image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
         rating: {
@@ -239,39 +239,39 @@ let products = [
             count: 145
         }
     }
-]
-function createProductCard(product){
-    const card = document.createElement("div")
-    card.className="product-card";
+];
 
-    const img = document.createElement('img');
-    img.src = product.image;
-    img.alt = product.title;
-    img.className = 'product-image';
+const productsContainer = document.getElementById('products-container');
 
-    const title = document.createElement('h3');
-    title.textContent = product.title;
-    title.className = 'product-title';
+products.forEach(product => {
+    const productCard = document.createElement('div');
+    productCard.className = 'product-card';
 
-    const price = document.createElement('p');
-    price.textContent = `$${product.price.toFixed(2)}`;
-    price.className = 'product-price';
+    const productImage = document.createElement('img');
+    productImage.src = product.image;
+    productImage.alt = product.title;
+    productImage.className = 'product-image';
+    productCard.appendChild(productImage);
 
-    const description = document.createElement('p');
-    description.textContent = product.description;
-    description.className = 'product-description';
+    const productTitle = document.createElement('h2');
+    productTitle.textContent = product.title;
+    productTitle.className = 'product-title';
+    productCard.appendChild(productTitle);
 
-    const rating = document.createElement('p');
-    rating.textContent = `Rating: ${product.rating.rate} (${product.rating.count} reviews)`;
-    rating.className = 'product-rating';
+    const productPrice = document.createElement('p');
+    productPrice.textContent = `$${product.price}`;
+    productPrice.className = 'product-price';
+    productCard.appendChild(productPrice);
 
-    // Append elements to the card
-    card.appendChild(img);
-    card.appendChild(title);
-    card.appendChild(price);
-    card.appendChild(description);
-    card.appendChild(rating);
+    const productDescription = document.createElement('p');
+    productDescription.textContent = product.description;
+    productDescription.className = 'product-description';
+    productCard.appendChild(productDescription);
 
-    return card;
+    const productRating = document.createElement('p');
+    productRating.textContent = `Rating: ${product.rating.rate} (${product.rating.count} reviews)`;
+    productRating.className = 'product-rating';
+    productCard.appendChild(productRating);
 
-}
+    productsContainer.appendChild(productCard);
+});
