@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="button-container">
+        <div class="btn">
+            <button class="filter-button" onclick="lowToHigh()">Low-To-High</button>
+            <button class="filter-button" onclick="highToLow()">High-To-Low</button>
+        </div>
+        <div class="category">
+            <select name="category" id="cat" onchange="filterByCategory()">
+                <option value="all">All</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="electronics">Electronics</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </select>
+        </div>
+        
+    </div>
+   
     <div id="products-container" class="products-container"></div>
     <script src="script.js"></script>
 </body>

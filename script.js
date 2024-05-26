@@ -243,35 +243,64 @@ const products = [
 
 const productsContainer = document.getElementById('products-container');
 
-products.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.className = 'product-card';
+function displayProducts(products) {
+    productsContainer.innerHTML = ''; // Clear existing products
+    products.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
 
-    const productImage = document.createElement('img');
-    productImage.src = product.image;
-    productImage.alt = product.title;
-    productImage.className = 'product-image';
-    productCard.appendChild(productImage);
+        const productImage = document.createElement('img');
+        productImage.src = product.image;
+        productImage.alt = product.title;
+        productImage.className = 'product-image';
+        productCard.appendChild(productImage);
 
-    const productTitle = document.createElement('h2');
-    productTitle.textContent = product.title;
-    productTitle.className = 'product-title';
-    productCard.appendChild(productTitle);
+        const productTitle = document.createElement('h2');
+        productTitle.textContent = product.title;
+        productTitle.className = 'product-title';
+        productCard.appendChild(productTitle);
 
-    const productPrice = document.createElement('p');
-    productPrice.textContent = `$${product.price}`;
-    productPrice.className = 'product-price';
-    productCard.appendChild(productPrice);
+        const category =document.createElement('h3');
+        category.textContent = `Category : ${product.category}`;
+        category.className='category';
+        productCard.appendChild(category);
 
-    const productDescription = document.createElement('p');
-    productDescription.textContent = product.description;
-    productDescription.className = 'product-description';
-    productCard.appendChild(productDescription);
+        const productPrice = document.createElement('p');
+        productPrice.textContent = `$${product.price}`;
+        productPrice.className = 'product-price';
+        productCard.appendChild(productPrice);
 
-    const productRating = document.createElement('p');
-    productRating.textContent = `Rating: ${product.rating.rate} (${product.rating.count} reviews)`;
-    productRating.className = 'product-rating';
-    productCard.appendChild(productRating);
+        const productDescription = document.createElement('p');
+        productDescription.textContent = product.description;
+        productDescription.className = 'product-description';
+        productCard.appendChild(productDescription);
 
-    productsContainer.appendChild(productCard);
-});
+        const productRating = document.createElement('p');
+        productRating.textContent = `Rating: ${product.rating.rate} (${product.rating.count} reviews)`;
+        productRating.className = 'product-rating';
+        productCard.appendChild(productRating);
+
+        productsContainer.appendChild(productCard);
+    });
+}
+
+function lowToHigh() {
+    const sortedProducts = [...products].sort((a, b) => a.price - b.price);
+    displayProducts(sortedProducts);
+}
+
+function highToLow() {
+    const sortedProducts = [...products].sort((a, b) => b.price - a.price);
+    displayProducts(sortedProducts);
+}
+function filterByCategory() {
+    const selectedCategory = document.getElementById('cat').value;
+    if (selectedCategory === 'all') {
+        displayProducts(products);
+    } else {
+        const filteredProducts = products.filter(product => product.category === selectedCategory);
+        displayProducts(filteredProducts);
+    }
+}
+
+displayProducts(products);

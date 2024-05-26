@@ -53,3 +53,34 @@ body {
     font-size: 0.9em;
     color: #888;
 }
+
+.category{
+    color: #888;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.filter-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.filter-button:hover {
+    background-color: blue;
+}
